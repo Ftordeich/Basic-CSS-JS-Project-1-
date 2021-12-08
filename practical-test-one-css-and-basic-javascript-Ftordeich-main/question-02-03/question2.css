@@ -1,0 +1,39 @@
+/* TODO Your CSS here. */
+#container{
+    margin: 50px auto;
+    width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+}
+.card{
+    border: 1px solid lightgray;
+    box-shadow: 5px 5px 3px darkgray;
+    display: flexbox;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+.card-image{
+    width: 100%;
+    object-fit: cover;
+}
+.card-body{
+    margin: 0px 5px 5px 5px;
+}
+@media screen and (max-width: 1000px){
+    #container{
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    
+}
+@media screen and (max-width: 800px) {
+    #container{
+        grid-template-columns: 1fr;
+    }
+    
+}
+
